@@ -12,5 +12,6 @@ from .views import hello_world
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/auth/", include("accounts.urls")),
+    path("api/exercises/", include("exercises.urls")),
     path("", hello_world, name="hello-world"),
 ]
